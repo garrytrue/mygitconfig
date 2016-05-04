@@ -1,0 +1,47 @@
+[user]
+	name = IgorTorba
+	email = garrytrue@yandex.ru
+[color]
+	ui = true
+	status = auto
+	branch = auto
+[core]
+	autocrlf = input
+	safecrlt = true
+ 	whitespace = trailing-space,space-before-tab
+[apply]
+	 whitespace = fix
+
+[alias]
+ 	 co = checkout
+  	st = status
+  	br = branch
+	reset = rst
+  	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  	type = cat-file -t
+  	dump = cat-file -p
+	cf = config
+	cfg = config --global
+	st = status
+	cm = commit
+	cmm = commit -m
+	co = checkout
+	coh = checkout HEAD
+	br = branch
+	dfs = diff --staged
+	df = diff
+	lgf = log --oneline --name-only
+	lg = log --pretty=format:\"%Cgreen%h$Creset - %an, %Cblue%ar%Creset : %s\"
+	p4 = !git-p4
+	aip = add -ip
+	cop = checkout -p
+        unp = log --pretty=format:\"%Cgreen%h$Creset - %an, %Cblue%ar%Creset : %s\" origin/master..HEAD
+        lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	ai = add -i
+	cma = commit --amend
+	ada = add --all
+ 
+[push]
+	default = simple
+[credential]
+	helper = cache
